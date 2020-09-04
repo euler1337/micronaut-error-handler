@@ -1,0 +1,12 @@
+micronaut:
+    application:
+        name: test
+    server:
+        port: 8080
+#    security:
+#        enabled: true
+#        basic-auth:
+#            enabled: true
+#        token:
+#            jwt:
+#            enabled: true
