@@ -14,7 +14,7 @@ public class Controller {
 
     @Get("/handler_last")
     public Single<String> badRequest() {
-        return Single.error(new ApplicationException(HttpStatus.BAD_REQUEST, ""));
+        return Single.error(new ApplicationException(HttpStatus.NOT_FOUND, ""));
     }
 
     @Get("/handler_first")
