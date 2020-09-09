@@ -1,3 +1,4 @@
-For some reason the order of server filters matters wrt MDC, MDC entries set in HI prio filters leak.
+For some reason the wrong error handler (of a parent class) is triggered instead of the correct error handler for the subclass.
+This only happens when the parent class error handler is defined above the subclass error handler in the file. 
 
-`MdcControllerTest.lowprio` works, but `MdcControllerTest.hiprio`fails.
+`ControllerTest.testHandlerFirst` works, but `ControllerTest.testHandlerLast`fails.
